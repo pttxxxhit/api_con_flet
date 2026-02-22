@@ -21,3 +21,22 @@ Ejecutar la app (PowerShell):
 Notas:
 - El ajuste de tamaño de la ventana intenta usar Pillow para leer `assets/fondo.png`. Si no quieres instalar Pillow, la app seguirá funcionando sin ajustar la ventana.
 - Si quieres que siempre se instale Pillow, deja `pillow` en `requirements.txt` (ya incluido).
+
+Cómo crear un repositorio remoto en GitHub y empujar (sin `gh`):
+
+1. Entra en https://github.com y crea un nuevo repositorio (privado o público) desde la web. Copia la URL del repositorio (por ejemplo: https://github.com/tu_usuario/nombre_repo.git).
+
+2. En PowerShell, desde la carpeta del proyecto ejecuta:
+
+```powershell
+# Reemplaza la URL por la de tu repositorio
+git remote add origin https://github.com/tu_usuario/nombre_repo.git
+git branch -M main
+git push -u origin main
+```
+
+Si tu repositorio usa autenticación por token, cuando Git pregunte usuario/contraseña, usa tu usuario y como contraseña el Personal Access Token (PAT).
+
+Notas finales:
+- Asegúrate de añadir `.env` a `.gitignore` si decides usar variables locales.
+- Si quieres que yo intente crear el repo remoto directamente desde aquí, puedo hacerlo sólo si la CLI `gh` está instalada y autenticada; en caso contrario debes hacerlo desde tu máquina o instalar `gh` y autenticarla`.
