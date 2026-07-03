@@ -37,6 +37,4 @@ git push -u origin main
 
 Si tu repositorio usa autenticación por token, cuando Git pregunte usuario/contraseña, usa tu usuario y como contraseña el Personal Access Token (PAT).
 
-Notas finales:
-- Asegúrate de añadir `.env` a `.gitignore` si decides usar variables locales.
-- Si quieres que yo intente crear el repo remoto directamente desde aquí, puedo hacerlo sólo si la CLI `gh` está instalada y autenticada; en caso contrario debes hacerlo desde tu máquina o instalar `gh` y autenticarla`.
+
